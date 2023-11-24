@@ -7,10 +7,11 @@
     background-repeat: no-repeat;
     background-position: center center;
     width: 40vw;
-    height: 100vh;
+    height: 98vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-right: 2%;
 }
 @font-face {
     font-family: "Norse-Bold";
@@ -23,9 +24,58 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 100px;
+    font-size: 6em;
     padding: 10px;
     width: 100vw;
     color: white;
     background-color: rgba(0, 0, 0, 0.4);
+}
+.form-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 1.5em;
+}
+.form-row { 
+    display: flex;
+    flex-direction: row;
+}
+.form-group {
+    flex: 1;
+}    
+.form-data {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    padding: 4% 0% 4% 0%;
+}
+label {
+    display: block;
+    font-weight: 500;
+    font-size: 0.86rem;
+    color:rgba(0, 0, 0, 0.8);
+    letter-spacing: 2px;
+}
+input {
+    font-family: 'Roboto';
+    padding: 2px 10px 2px 10px;
+    width: 45%;
+    height: 22px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+button {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 1rem;
+    color:rgba(0, 0, 0, 0.8);
+    background-color: rgb(210, 180, 130);
+    border: none;
+    border-radius: 5px;
+    height: 45px;
+    width: 20%;
+}
+a {
+    color: rgb(210, 180, 130);
+    text-decoration: none;
 }
