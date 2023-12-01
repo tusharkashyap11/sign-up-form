@@ -8,11 +8,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <script src="script.js" defer></script>
+    <title>Sign-Up Page</title>
 </head>
 <body>
     <div class="main">
-        <div class="left-panel">
+        <div class="left-panel"> 
             <div class="logo">
                 <img src="odin-lined.png" width="15%"> ODIN
             </div>
@@ -34,7 +35,7 @@
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="first_name">FIRST NAME</label>
-                                <input type="text" id="first_name" name="first_name">
+                                <input type="text" id="first_name" name="first_name" autocomplete="username">
                             </div>
                             <div class="form-group">
                                 <label for="last_name">LAST NAME</label>
@@ -45,7 +46,7 @@
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="email">EMAIL</label>
-                                <input type="email" id="email" name="email">
+                                <input type="email" id="email" name="email" autocomplete="email">
                             </div>
                             <div class="form-group">
                                 <label for="phone_number">PHONE NUMBER</label>
@@ -56,11 +57,12 @@
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="user_password">PASSWORD</label>
-                                <input type="password" id="user_password" name="password">
+                                <input type="password" id="user_password" name="password" onkeyup='validatePassword();' required>
+                                <div class="error-message"></div>
                             </div>
                             <div class="form-group">
-                                <label for="password">CONFIRM PASSWORD</label>
-                                <input type="password" id="password" name="password">
+                                <label for="confirm_password">CONFIRM PASSWORD</label>
+                                <input type="password" id="confirm_password" name="confirm_password" onkeyup='validatePassword();' required>
                             </div>
                         </div>
                     </div>
